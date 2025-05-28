@@ -15,8 +15,10 @@
 }
 
 body {
-  
+
   overflow-x: hidden;
+ 
+  
 }
 
 /* Navigation */
@@ -182,7 +184,7 @@ h1 {
 
 .hero-image {
   position: relative;
-  left: 50px;
+  left: 20px;
   /* width: 1000px; */
   padding-bottom: 400px;
 }
@@ -486,11 +488,14 @@ h1 {
 
 .constr-content {
   position: relative;
+  text-align: center;
   top: 30%;
   z-index: 2;
   left: 10%;
   padding-right: 50px;
 }
+
+
 
 .constr-content h3 {
   font-size: 24px;
@@ -582,9 +587,16 @@ h1 {
 #next-btn:hover {
   background-color: #e64a19;
 }
+
+.funcionamiento {
+  padding: 64px 24px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
 .one,
 .two,
-.three {
+.three,
+.four {
   width: 33.33%;
   /* border:1px solid white; */
   height: 99%;
@@ -641,22 +653,45 @@ h2 {
 }
 .three {
   display: flex;
+  flex-direction: row;
 }
 .threeImg {
-  border-radius: 400px 500px 600px;
+  background-color: orange;
+  width: 300px;
+  height: 400px;
+  border-radius: 100px 300px 200px;
 }
 .threeTxt {
   display: flex;
-  flex-direction: column;
   text-align: left;
+  flex-direction: column;
+  /* border:1px solid red; */
+  width: 300px;
+  padding-left: 20px;
+  /* position:absolute;
+    width:200px;
+    top:5%;
+    left:21%; */
 }
-.one {
+.four {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.fourImg {
+  border-radius: 300px 200px 300px 400px;
+}
+.fourTxt {
   position: relative;
-  left: 100px;
+  width: 270px;
+  top: -100px;
+  text-align: left;
+  padding-left: 20px;
 }
+.one,
 .three {
-  position: relative;
-  left: -100px;
+  position: static;
 }
 .oneImg {
   background-image: url("https://hdwallpaperim.com/wp-content/uploads/2017/08/25/121661-living_rooms-interiors-interior_design.jpg");
@@ -665,24 +700,61 @@ h2 {
   background-size: cover;
 }
 .twoImg {
-  background-image: url("https://cuttingedgeds.com/wp-content/uploads/2019/11/interior-designer-for-home-and-business-space-1.jpg");
+  background-image: url("https://www.bloglenovo.es/app/uploads/2023/06/L_03-1.png");
 }
 .threeImg {
   background-image: url("https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/modern-interior-design-grey-living-room2.png");
 }
+.fourImg {
+  background-image: url("https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/modern-interior-design-grey-living-room2.png");
+}
+
 @media (max-width: 1024px) {
-  .three {
-    display: none;
+  .hero-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .one, .two, .three, .four {
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    position: static;
+  }
+
+  .oneImg, .twoImg, .threeImg, .fourImg {
+    width: 90%;
+    height: auto;
+    max-width: 300px;
+    aspect-ratio: 3/4;
+    border-radius: 30px;
+  }
+
+  .oneTxt, .twoTxt, .threeTxt, .fourTxt {
+    width: 90%;
+    padding-left: 0;
+    text-align: center;
+    top: 0;
+    position: static;
+  }
+
+  h2 {
+    font-size: 24px;
   }
 }
 
 .info-section {
   display: flex;
+  flex-direction: column;
   text-align: center;
   padding: 50px 20px;
   background-color: #fff;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  position: relative;
 }
 
 .info-header h2 {
@@ -698,8 +770,9 @@ h2 {
 
 .info-stats {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   margin-top: 30px;
 }
 
@@ -713,31 +786,76 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-}
-
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #333;
-  margin: 0;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .stat p {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: #555;
-  margin-top: 10px;
+  margin: 0;
 }
+
 .info-header .background-shape {
   position: absolute;
-  left: 150px;
-  transform: translateY(-25%);
-  width: 400px;
-  height: 200px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-25%);
+  width: 300px;
+  height: 150px;
   background: linear-gradient(135deg, #ffd700, #ff9d00);
   border-radius: 100px 200px 100px 300px;
   opacity: 0.2;
-  /* z-index: -1; */
+  z-index: -1;
+}
+
+/* 🔁 Media Queries */
+@media (max-width: 768px) {
+  .info-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-header p {
+    font-size: 1rem;
+  }
+
+  .stat {
+    width: 120px;
+    height: 120px;
+  }
+
+  .stat p {
+    font-size: 0.75rem;
+  }
+
+  .info-header .background-shape {
+    width: 250px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat {
+    width: 100px;
+    height: 100px;
+  }
+
+  .stat p {
+    font-size: 0.7rem;
+  }
+
+  .info-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .info-header p {
+    font-size: 0.9rem;
+  }
+
+  .info-header .background-shape {
+    width: 200px;
+    height: 100px;
+  }
 }
 
 .footer {
