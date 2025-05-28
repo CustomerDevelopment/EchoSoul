@@ -8,6 +8,7 @@
 }
 
 * {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -331,12 +332,20 @@ h1 {
 }
 
 .circle.orange {
-  background-color: #ffe5cc;
+  background-color: #E8D8C3;
 }
 
 .circle.yellow {
-  background-color: #ffe399;
+  background-color: #C2A77C;
 }
+
+.circle.red {
+  background-color: #e63434;
+}
+
+
+
+
 
 .icon {
   width: 50px;
@@ -734,7 +743,7 @@ h2 {
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #333;
+  background-color: #2F2F2F;
   color: #fff;
   font-size: 16px;
   margin-top: 40px;
