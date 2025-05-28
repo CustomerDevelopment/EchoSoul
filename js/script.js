@@ -138,7 +138,7 @@ const items = Array.from(document.querySelectorAll(".carousel-item"));
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 
-let currentIndex = 1;
+let currentIndex = 0;
 
 // Update carousel position
 function updateCarousel() {
