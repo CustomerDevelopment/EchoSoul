@@ -2,9 +2,9 @@
 
 
 :root {
-  --primary: #f3482a;
-  --dark: #1a1a1a;
-  --light: #ffffff;
+  --primary: #1A1A2E;
+  --dark: #4E4E50;
+  --light: #FAFAFA;
 }
 
 * {
@@ -32,9 +32,17 @@ body {
   position: relative;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 600;
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /*Disminuir tamaño del div*/
+  width: 150px;
+}
+
+.logo img{
+  height: 100%;
+  width: 100%;
 }
 
 .nav-links {
