@@ -349,7 +349,6 @@ h1 {
 }
 .features-header {
   text-align: center;
-  margin-bottom: 3rem;
 }
 
 .features-label {
@@ -366,6 +365,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  margin-bottom: 40px;
 }
 
 .carousel {
@@ -517,6 +517,7 @@ h1 {
   gap: 32px;
   padding: 20px;
   height: 550px;
+  margin-top: -40px;
 }
 
 .constr-card {
@@ -524,14 +525,14 @@ h1 {
   background: #FAFAFA;
   backdrop-filter: blur(8px);
   border-radius: 12px;
-  padding: 32px 50px;
+  padding: 0px 50px;
   transition: transform 0.3s ease;
   overflow: hidden;
   min-height: 300px;
 }
 
 .constr-card:hover {
-  transform: translateY(-40px);
+  transform: translateY(-30px);
 }
 
 .constr-blob {
@@ -612,7 +613,7 @@ h1 {
   align-items: center;
   position: relative;
   overflow: hidden;
-  height: 600px;
+  height: 100%;
   /* border:1px solid red; */
   width: 100%;
 }
@@ -663,7 +664,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 160px;
+  gap: 120px;
  
 }
 
@@ -695,7 +696,7 @@ h1 {
   background-image: url('https://www.bloglenovo.es/app/uploads/2023/06/L_03-1.png');
 }
 .threeImg {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-EAYrCMt6dqMYfBq84a_yR9D_QZhclaphCjWrTB3O4nSGLbAryxO6AYM98lPG5CFs7c&usqp=CAU');
+  background-image: url(https://static.vecteezy.com/system/resources/previews/001/308/423/large_2x/voice-technology-design-vector.jpg);
 }
 .fourImg {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIEvOOXmOkPKId7bzelffAY1mvHpn8sLDrg&s');
@@ -778,7 +779,6 @@ h1 {
   width: 300px;
   height: 150px;
   border-radius: 100px 200px 100px 300px;
-  opacity: 0.2;
   z-index: -1;
 }
 
@@ -838,4 +838,93 @@ h1 {
   color: #fff;
   font-size: 16px;
   margin-top: 40px;
+}
+
+.info-section {
+  background-color: #FAFAFA;
+  padding: 80px 20px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.info-header h2 {
+  font-size: 2.5rem;
+  color: #4E4E50;
+  margin-bottom: 10px;
+  font-weight: 700;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.info-header p {
+  font-size: 1.2rem;
+  color: #4E4E50;
+  font-weight: 500;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.background-shape {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%) rotate(6deg);
+  width: 120%;
+  height: 200px;
+  background-color: #B9AEDC;
+  z-index: 1;
+  border-radius: 40% 40% 0 0;
+}
+
+.info-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .info-stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.stat {
+  background: white;
+  border: 2px solid #4E4E50;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  color: #4E4E50;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Animaciones suaves */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
