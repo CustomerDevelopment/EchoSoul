@@ -776,7 +776,7 @@ h1 {
   top: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-25%);
-  width: 300px;
+  width: 500px;
   height: 150px;
   border-radius: 100px 200px 100px 300px;
   z-index: -1;
