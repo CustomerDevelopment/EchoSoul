@@ -18,7 +18,7 @@
 body {
 
   overflow-x: hidden;
- 
+  background-color: var(--light);
   
 }
 
@@ -264,6 +264,69 @@ h1 {
     display: block;
   }
 }
+
+/* CSS */
+.problema-section {
+  background-color: #FAFAFA;
+  padding: 80px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2.8rem;
+  color: #4E4E50;
+  margin-bottom: 24px;
+  transition: transform 0.3s ease;
+}
+
+.titulo:hover {
+  transform: scale(1.05);
+}
+
+.descripcion {
+  font-size: 1.2rem;
+  color: #4E4E50;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.bloque {
+  display: block;
+  margin-top: 20px;
+}
+
+.enfasis {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.boton-contenedor {
+  margin-top: 40px;
+}
+
+.boton {
+  background-color: #4E4E50;
+  color: white;
+  font-size: 1rem;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #3a3a3c;
+}
+
 
 .difference-section {
   text-align: center;
@@ -673,7 +736,7 @@ h1 {
   flex-direction: column;
   text-align: center;
   padding: 50px 20px;
-  background-color: #fff;
+  background-color: #FAFAFA;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -725,7 +788,6 @@ h1 {
   transform: translateX(-50%) translateY(-25%);
   width: 300px;
   height: 150px;
-  background: linear-gradient(135deg, #ffd700, #ff9d00);
   border-radius: 100px 200px 100px 300px;
   opacity: 0.2;
   z-index: -1;
