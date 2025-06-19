@@ -426,6 +426,44 @@ h1 {
 
 
 
+@media (max-width: 768px) {
+  .carousel-item {
+    flex-direction: column;
+    flex: 0 0 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 10px;
+    box-sizing: border-box;
+  }
+
+  .description {
+    max-width: 90%;
+    margin: 20px 0;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+  }
+
+  .carousel-track {
+    gap: 0 !important;
+  }
+
+  .features-title {
+    font-size: 2rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .navigation {
+    margin-top: 20px;
+  }
+}
+
+
 
 .icon {
   width: 50px;
@@ -534,7 +572,7 @@ h1 {
   padding: 0px 50px;
   transition: transform 0.3s ease;
   overflow: hidden;
-  min-height: 300px;
+  min-height: 360px;
 }
 
 .constr-card:hover {
@@ -557,7 +595,7 @@ h1 {
 .constr-content {
   position: relative;
   text-align: center;
-  top: 15%;
+  
   z-index: 2;
   left: 10%;
   padding-right: 50px;
@@ -577,6 +615,12 @@ h1 {
   font-size: 16px;
 }
 
+.funcionamiento {
+  padding: 64px 24px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .constr-services {
@@ -584,6 +628,7 @@ h1 {
   }
   .funcionamiento {
     padding: 48px 16px;
+    padding-top: 600px;
   }
 
   .constr-title {
@@ -661,11 +706,7 @@ h1 {
   background-color: #e64a19;
 }
 
-.funcionamiento {
-  padding: 64px 24px;
-  /* max-width: 1200px; */
-  margin: 0 auto;
-}
+
 .responsive-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -815,7 +856,7 @@ h1 {
 
 @media (max-width: 480px) {
   .stat {
-    width: 100px;
+    width: 200px;
     height: 100px;
   }
 
