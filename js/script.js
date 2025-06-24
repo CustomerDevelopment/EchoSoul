@@ -140,17 +140,14 @@ const nextBtn = document.querySelector(".next");
 
 let currentIndex = 0;
 
-// Update carousel position
+
+
 function updateCarousel() {
   const itemWidth = items[0].getBoundingClientRect().width;
-  const trackOffset = (track.parentElement.offsetWidth - itemWidth) / 3;
+  const trackOffset = window.innerWidth <= 768 ? 0 : (track.parentElement.offsetWidth - itemWidth) / 3;
 
-  // Center the current item
-  track.style.transform = `translateX(calc(-${
-    currentIndex * itemWidth
-  }px + ${trackOffset}px))`;
+  track.style.transform = `translateX(calc(-${currentIndex * itemWidth}px + ${trackOffset}px))`;
 
-  // Update active item
   items.forEach((item, index) => {
     item.classList.remove("active");
     if (index === currentIndex) {
